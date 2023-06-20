@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"tang1_72mhz\startup_stm32f103xb.o"
+"tang1_72mhz\main.o"
+"tang1_72mhz\stm32f1xx_it.o"
+"tang1_72mhz\stm32f1xx_hal_msp.o"
+"tang1_72mhz\lcd_16x2.o"
+"tang1_72mhz\stm32f1xx_hal_gpio_ex.o"
+"tang1_72mhz\stm32f1xx_hal_adc.o"
+"tang1_72mhz\stm32f1xx_hal_adc_ex.o"
+"tang1_72mhz\stm32f1xx_hal.o"
+"tang1_72mhz\stm32f1xx_hal_rcc.o"
+"tang1_72mhz\stm32f1xx_hal_rcc_ex.o"
+"tang1_72mhz\stm32f1xx_hal_gpio.o"
+"tang1_72mhz\stm32f1xx_hal_dma.o"
+"tang1_72mhz\stm32f1xx_hal_cortex.o"
+"tang1_72mhz\stm32f1xx_hal_pwr.o"
+"tang1_72mhz\stm32f1xx_hal_flash.o"
+"tang1_72mhz\stm32f1xx_hal_flash_ex.o"
+"tang1_72mhz\stm32f1xx_hal_exti.o"
+"tang1_72mhz\stm32f1xx_hal_tim.o"
+"tang1_72mhz\stm32f1xx_hal_tim_ex.o"
+"tang1_72mhz\stm32f1xx_hal_uart.o"
+"tang1_72mhz\system_stm32f1xx.o"
+--strict --scatter "tang1_72mhz\tang1_72mhz.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tang1_72mhz.map" -o tang1_72mhz\tang1_72mhz.axf

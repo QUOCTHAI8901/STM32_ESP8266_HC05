@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"tang2\startup_stm32f103xb.o"
+"tang2\main.o"
+"tang2\stm32f1xx_it.o"
+"tang2\stm32f1xx_hal_msp.o"
+"tang2\lcd_16x2.o"
+"tang2\stm32f1xx_hal_gpio_ex.o"
+"tang2\stm32f1xx_hal_adc.o"
+"tang2\stm32f1xx_hal_adc_ex.o"
+"tang2\stm32f1xx_hal.o"
+"tang2\stm32f1xx_hal_rcc.o"
+"tang2\stm32f1xx_hal_rcc_ex.o"
+"tang2\stm32f1xx_hal_gpio.o"
+"tang2\stm32f1xx_hal_dma.o"
+"tang2\stm32f1xx_hal_cortex.o"
+"tang2\stm32f1xx_hal_pwr.o"
+"tang2\stm32f1xx_hal_flash.o"
+"tang2\stm32f1xx_hal_flash_ex.o"
+"tang2\stm32f1xx_hal_exti.o"
+"tang2\stm32f1xx_hal_tim.o"
+"tang2\stm32f1xx_hal_tim_ex.o"
+"tang2\stm32f1xx_hal_uart.o"
+"tang2\system_stm32f1xx.o"
+--strict --scatter "tang2\tang2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tang2.map" -o tang2\tang2.axf
